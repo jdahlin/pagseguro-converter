@@ -159,7 +159,7 @@ class PagseguroParser(object):
             t = Transaction()
             t.id = oldid
             t.type = 'CREDIT'
-            t.desc = "Pagseguro taxa 2.9% + R$0.40"
+            t.desc = "Pagseguro taxa 3.99% + R$0.40"
             t.value = -self._parse_value(node.find('Valor_Taxa').text)
             t.date = date
             self.transactions.append(t)
